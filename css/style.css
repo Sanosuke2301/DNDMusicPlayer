@@ -1,7 +1,7 @@
 
 html, body {
-    height: auto;
-    overflow-y: auto;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -54,12 +54,17 @@ h1 {
 
 .button-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   gap: 20px;
   padding: 20px;
   justify-items: center;
   max-width: 960px;
   margin: 0 auto;
+}
+
+button, input[type="file"] {
+    width: 90%;
+    max-width: 400px;
 }
 
 button {
