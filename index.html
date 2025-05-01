@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <title>D&D Music Player</title>
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="manifest" href="manifest.json">
+	<meta name="theme-color" content="#856543">
+</head>
+<body>
+    <h1>D&D Music Player</h1>
+	<img src="images/parchment-paper.jpg" alt="background" class="background-image">
+	<div id="now-playing" class="now-playing">No track playing</div>
+    <div class="button-grid">
+        <button onclick="playMusic('battle')"><img src="images/icons/battle.png" alt="Battle icon" class="icon">Battle</button>
+        <button onclick="playMusic('tavern')"><img src="images/icons/tavern.png" alt="Tavern icon" class="icon">Tavern</button>
+        <button onclick="playMusic('mystery')"><img src="images/icons/mystery.png" alt="Mystery icon" class="icon">Mystery</button>
+        <button onclick="playMusic('dungeon')"><img src="images/icons/dungeon.png" alt="Dungeon icon" class="icon">Dungeon</button>
+        <button onclick="playMusic('victory')"><img src="images/icons/victory.png" alt="Victory icon" class="icon">Victory</button>
+        <button onclick="playMusic('forest_day')"><img src="images/icons/forest_day.png" alt="Forest_Day icon" class="icon">Forest (Day)</button>
+		<button onclick="playMusic('forest_night')"><img src="images/icons/forest_night.png" alt="Forest_Night icon" class="icon">Forest (Night)</button>
+        <button onclick="playMusic('desert')"><img src="images/icons/desert.png" alt="Desert icon" class="icon">Desert</button>
+        <button onclick="playMusic('city')"><img src="images/icons/city.png" alt="City icon" class="icon">City</button>
+        <button onclick="playMusic('temple')"><img src="images/icons/temple.png" alt="Temple icon" class="icon">Temple</button>
+        <button onclick="playMusic('ritual')"><img src="images/icons/ritual.png" alt="Ritual icon" class="icon">Ritual</button>
+		<button onclick="playMusic('long_rest')"><img src="images/icons/long_rest.png" alt="Long rest icon" class="icon">Long Rest</button>
+        <button onclick="stopMusic()"><img src="images/icons/stop.png" alt="Stop icon" class="icon">Stop</button>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
