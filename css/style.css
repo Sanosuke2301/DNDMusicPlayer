@@ -17,13 +17,20 @@ body {
 }
 
 .background-image {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    height: auto;
     min-height: 100vh;
     object-fit: cover; /* <<< important: scales image without cropping */
     z-index: -1; /* sends image behind your content */
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 40px; /* space at bottom */
 }
 
 h1 {
